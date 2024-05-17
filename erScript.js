@@ -3,6 +3,7 @@
 
 // Instructions from https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
 
+// Step 1 //
 
 const PLAYER_X_CLASS = 'x'
 const PLAYER_O_CLASS = 'circle'
@@ -65,7 +66,7 @@ function endGame(draw) {
 
 function isDraw() {
 	return [...cellElements].every(cell => {
-		return cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_0_CLASS)
+		return cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_O_CLASS)
 	})
 };
 
@@ -74,7 +75,7 @@ function placeMark(cell, currentClass) {
 };
 
 function swapTurns() {
-	isPlayer_O_Turn = !isPlayer_O_Turn
+	isPlayer_O_Turn =! isPlayer_O_Turn
 };
 
 function setBoardHoverClass() {
